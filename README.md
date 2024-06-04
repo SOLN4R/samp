@@ -1,2 +1,1 @@
-# samp
-RolePlay project GTA SA on SAMP
+## Canit Role Play - RolePlay project GTA SA on SA:MP
