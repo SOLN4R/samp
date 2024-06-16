@@ -3619,12 +3619,16 @@ public OnGameModeInit()
 			ac_BindAddr = ac_IpToInt(ac_strtmp);
 		#endif
 	#endif
-	print(" ");
-	print("--------------------------------------");
-	print(LOADED_MSG_1);
-	printf(LOADED_MSG_2, NEX_AC_VERSION);
-	print(LOADED_MSG_3);
-	print("--------------------------------------\n");
+	// print(" ");
+	// print("--------------------------------------");
+	// print(LOADED_MSG_1);
+	// printf(LOADED_MSG_2, NEX_AC_VERSION);
+	// print(LOADED_MSG_3);
+	// print("--------------------------------------\n");
+
+	print("\n [Nex-AC] Античит активирован.");
+
+
 	#if defined ac_OnGameModeInit
 		new ac_a = ac_OnGameModeInit();
 	#endif

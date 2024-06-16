@@ -7,8 +7,6 @@
 
 #include <a_samp>
 
-#define MAPFIX_VERSION					"4.6.5"
-
 #define MAX_MAPFIX_OBJECTS				654
 
 #if !defined MAPFIX_USE_STREAMER
@@ -48,7 +46,6 @@ public OnGameModeInit()
 	#endif
 	if(MapFixIsEnabled < 2)
 	{
-		printf("MapFix by Nexius v%s loaded (include version).", MAPFIX_VERSION);
 		CreateMapFixObjects();
 	}
 	#if defined mf_OnGameModeInit
@@ -72,7 +69,6 @@ public OnGameModeExit()
 {
 	if(MapFixIsEnabled < 2)
 	{
-		printf("MapFix by Nexius v%s unloaded (include version).", MAPFIX_VERSION);
 		DestroyMapFixObjects();
 		#if defined DeleteSVar
 			DeleteSVar("MapFixIsEnabled");
